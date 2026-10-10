@@ -451,7 +451,7 @@ const VIEWS = { home: viewHome, baby: viewBaby, kid: viewKid, family: viewFamily
 /* ───────────── Rendu ───────────── */
 function loginHtml() {
   return `<form class="login-box" id="login-form">
-    <img src="icons/icon-192.png" alt="" class="login-logo">
+    <img src="./icon-192.png" alt="" class="login-logo">
     <h1>Notre Nid</h1>
     <p>Connecte-toi avec le compte créé dans Firebase.</p>
     <input type="email" name="email" placeholder="Adresse e-mail" autocomplete="username" required>
@@ -465,7 +465,7 @@ function render() {
   const login = $('#login');
   const app = $('#app');
   if (store.mode === 'cloud' && !store.authReady) {
-    login.innerHTML = '<div class="login-box"><img src="icons/icon-192.png" alt="" class="login-logo"><p>Chargement…</p></div>';
+    login.innerHTML = '<div class="login-box"><img src="./icon-192.png" alt="" class="login-logo"><p>Chargement…</p></div>';
     login.hidden = false; app.hidden = true; return;
   }
   if (store.mode === 'cloud' && !store.user && !store.offlineFallback) {

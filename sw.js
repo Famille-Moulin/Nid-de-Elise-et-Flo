@@ -1,8 +1,8 @@
 // Service worker : permet d'ouvrir l'app sans réseau et de l'installer sur l'écran d'accueil.
 // Incrémente VERSION après une modification si un téléphone garde l'ancienne version.
-const VERSION = 'nid-v1';
+const VERSION = 'nid-v2';
 const SHELL = ['./', './index.html', './style.css', './app.js', './store.js', './config.js', './manifest.json',
-  './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
+  './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
