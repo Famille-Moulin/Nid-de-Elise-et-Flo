@@ -22,11 +22,11 @@
 //  que vos deux adresses e-mail.
 // ─────────────────────────────────────────────────────────────
 
-export const firebaseConfig = apiKey: "AIzaSyBNJQXfEP3EychQRV6lRknxSv0meZcjiRk",
+export const firebaseConfig = {apiKey: "AIzaSyBNJQXfEP3EychQRV6lRknxSv0meZcjiRk",
   authDomain: "nid-de-elise-et-flo.firebaseapp.com",
   databaseURL: "https://nid-de-elise-et-flo-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "nid-de-elise-et-flo",
   storageBucket: "nid-de-elise-et-flo.firebasestorage.app",
   messagingSenderId: "166972730678",
-  appId: "1:166972730678:web:44685d177daf51927ed797
-;
+  appId: "1:166972730678:web:44685d177daf51927ed797"
+};
