@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Notre Nid</title>
+  <meta name="description" content="Le carnet de la famille : bébé, grand frère, courses et rendez-vous.">
+  <meta name="theme-color" content="#EEF1EC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11131B" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Notre Nid">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" hidden>
+    <header class="top">
+      <div class="top-in">
+        <h1 id="title">Notre Nid</h1>
+        <span id="sync" class="sync"></span>
+        <button class="icon-btn" id="theme-btn" data-act="theme" aria-label="Changer l'apparence">◐</button>
+      </div>
+    </header>
+    <div id="banner"></div>
+    <main id="main"></main>
+    <nav class="nav" id="nav">
+      <button data-act="nav" data-tab="home"><span class="nav-ico">⌂</span><span>Accueil</span></button>
+      <button data-act="nav" data-tab="baby"><span class="nav-ico">🍼</span><span>Bébé</span></button>
+      <button data-act="nav" data-tab="kid"><span class="nav-ico">★</span><span id="nav-kid">Grand frère</span></button>
+      <button data-act="nav" data-tab="family"><span class="nav-ico">☰</span><span>Famille</span></button>
+      <button data-act="nav" data-tab="settings"><span class="nav-ico">⚙</span><span>Réglages</span></button>
+    </nav>
+  </div>
+
+  <div id="login" hidden></div>
+
+  <div id="sheet-wrap" hidden>
+    <div class="backdrop" data-act="close-sheet"></div>
+    <div class="sheet" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

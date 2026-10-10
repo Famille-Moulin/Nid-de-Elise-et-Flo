@@ -1,0 +1,10 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "family": {
+      ".read": "auth != null && (auth.token.email == 'papa@exemple.fr' || auth.token.email == 'maman@exemple.fr')",
+      ".write": "auth != null && (auth.token.email == 'papa@exemple.fr' || auth.token.email == 'maman@exemple.fr')"
+    }
+  }
+}
